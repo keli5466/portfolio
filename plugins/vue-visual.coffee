@@ -5,3 +5,7 @@ Vue.component('visual', require 'vue-visual').options.setDefaults
 	load: 'visible'
 	loadPoster: true
 	transition: 'vv-fade'
+	# Video defaults
+	muted: true
+	loop: true
+	autoplay: 'visible'
