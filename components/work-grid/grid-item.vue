@@ -6,7 +6,15 @@ The layout header
 
 
 .box
-	visual.background(fill :image='project.bg')
+	visual.background(v-if='project.bg' fill :image='project.bg')
+	.copy
+	visual.video(v-if='project.video' loop mute
+		background='cover'
+		load-video='visible'
+		:autoplay='true'
+		:fallback='project.fallback'
+		:playsinline= 'true'
+		:video='project.video')
 	.copy
 
 		p.project-info {{project.info}}
@@ -27,7 +35,12 @@ The layout header
 	height 100%
 	opacity 1
 	transition opacity 300ms ease
-
+.video
+	width 100%
+	height 100%
+	position absolute
+	left 0
+	top 0
 .box
 	min-height rem(350px)
 	overflow hidden
