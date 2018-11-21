@@ -1,5 +1,5 @@
 <!--
-The layout header
+Grib/Masonary component
 -->
 
 <template lang='pug'>
@@ -13,9 +13,12 @@ The layout header
 
 <script lang='coffee'>
 import portfolio from './portfolio'
+
 export default
+
 	components:
 		'box': require './grid-item'
+
 	data:->
 		block: portfolio
 </script>
@@ -23,10 +26,19 @@ export default
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <style lang='stylus' scoped>
+
 .grid
 	display flex
 	flex-flow row wrap
 	width 100%
+	position relative
+	z-index 9
+
+	&:before
+		content ''
+		width 100%
+		height rem(nav-height)
+		background-image linear-gradient(to top,#fff,hsla(0,0%,100%,0))
 
 .background
 	width 100%
