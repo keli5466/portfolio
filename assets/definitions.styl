@@ -10,10 +10,9 @@
  */
 
 // Breakpoints
-desktop = 1368px
+desktop = 1440px
 tablet-landscape = 1024px
 tablet = 768px
-mobile-landscape = 580px
 mobile = 500px
 
 // Colors
@@ -28,13 +27,20 @@ smooth-in-out = cubic-bezier(.8,0,.2,1)
 body-font-size = 20px
 
 gutter = rem(40px)
+large-gutter = 182px
+
 // Layout
 max-w = desktop
+nav-height = 80px
 
 /*******************************************************************************
  * Mixins
  */
-
+vw-calc(prop, size, break = max-w)
+	convert = (size / break) * 100
+	{prop} unit(convert, vw)
+	@media(min-width break)
+		{prop} size
 // Mixins must be relative to `resolve.root` (the "~") since this module may be
 // included at any folder depth. Globing is not possible here because the glob-er
 // doesn't work within @import-ed files.

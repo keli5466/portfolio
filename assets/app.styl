@@ -8,7 +8,7 @@
 // Set font-sizes so rem values for responsive effects.  Combined with the
 // font() call on `body`, this scales from 20px down to 14px
 :root
-	mq-values(font-size, 100%, 80%, max-w)
+	mq-values(font-size, 100%, 65%, max-w)
 
 html
 	width 100%
@@ -24,5 +24,6 @@ body
 
 
 .max-w
-	max-width 1440px
+	max-width max-w
+	vw-calc(padding-h, large-gutter)
 	margin-h auto
