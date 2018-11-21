@@ -7,7 +7,9 @@ Default layout
 .home
 
 	layout-header
+
 	marquee#intro
+
 	grid#work
 
 </template>
