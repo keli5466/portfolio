@@ -1,6 +1,3 @@
-<!--
-The layout header
--->
 
 <template lang='pug'>
 

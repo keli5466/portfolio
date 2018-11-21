@@ -3,8 +3,15 @@ The layout header
 -->
 
 <template lang='pug'>
+
+
 .box
 	visual.background(v-if='project.bg' fill :image='project.bg')
+	visual.video(v-if='project.video' loop mute
+		background='cover'
+		:autoplay='true'
+		:fallback='project.fallback'
+		:video='project.video')
 	.copy
 
 		p.project-info {{project.info}}

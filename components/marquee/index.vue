@@ -5,7 +5,6 @@ The layout header
 <template lang='pug'>
 
 .marquee
-	//- visual.background(image='https://ih0.redbubble.net/image.335598764.1682/flat,1000x1000,075,f.u2.jpg')
 	.content
 		h1.headline Kelly <br> Linehan
 		h2.subhead Front-end Web Developer
@@ -15,13 +14,7 @@ The layout header
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script lang='coffee'>
- # export default
- 	# components:
- 	# props: []
- 	# data: ->
- 	# computed:
-	# watch:
- 	# methods:
+
 </script>
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->

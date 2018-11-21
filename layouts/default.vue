@@ -8,11 +8,7 @@ Default layout
 
 	layout-header
 	marquee#intro
-	//- about
 	grid#work
-	//- footer
-
-	//- nuxt
 
 </template>
 
@@ -22,10 +18,8 @@ Default layout
 export default
 	components:
 		'grid': require '~/components/work-grid'
-		'about': require '~/components/about'
 		'marquee': require '~/components/marquee'
 		'layout-header': require '~/components/layout/header'
-		# 'footer': require '~/components/layout/footer'
 </script>
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
