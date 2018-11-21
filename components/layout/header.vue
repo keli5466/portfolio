@@ -7,7 +7,7 @@ The layout header
 .header
 	.max-w
 		visual.logo(image='./kl-logo.png' background=''
-		:class='{fullOpac: active}')
+			:class='{fullOpac: active}')
 		.primary-nav
 			a.nav-item(href='#intro'
 				:class='{active: !active}'

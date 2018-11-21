@@ -14,7 +14,7 @@ module.exports =
 			{ name: 'msapplication-tap-highlight', content:'no' }
 		]
 		link: [
-			{ rel: 'icon', 	type: 'image/x-icon', href: './favicon.ico' }
+			{ rel: 'icon', 	type: 'image/x-icon', href: '/favicon.ico' }
 		]
 
 	# Global styles
@@ -23,9 +23,9 @@ module.exports =
 		'~/assets/app.styl'
 	]
 	plugins: [
-		# '~/plugins/vue-visual'
+		'~/plugins/vue-visual'
 		{ src: '~/plugins/scroll-to-anchor', ssr: false }
-		{ src: '~/plugins/vue-visual', ssr: false }
+		# { src: '~/plugins/vue-visual', ssr: false }
 		{ src: '~/plugins/vue-scroll', ssr: false }
 	]
 	server: [
