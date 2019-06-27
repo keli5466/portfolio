@@ -33,6 +33,8 @@ export default
 	width 100%
 	position relative
 	z-index 9
+	max-width: 1920px;
+	justify-content: center;
 
 	&:before
 		content ''

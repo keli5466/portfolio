@@ -54,7 +54,7 @@ item-height = 400px
 
 	&:nth-child(3n+1)
 		flex 1 1 (max-w/2)
-		min-width 50%
+		min-width 60%
 
 		.copy
 			max-width 80%

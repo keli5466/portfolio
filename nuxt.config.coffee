@@ -23,10 +23,9 @@ module.exports =
 		'~/assets/app.styl'
 	]
 	plugins: [
-		'~/plugins/vue-visual'
+		# '~/plugins/vue-visual'
 		{ src: '~/plugins/scroll-to-anchor', ssr: false }
 		{ src: '~/plugins/vue-visual', ssr: false }
-		# { src: '~/plugins/vue-scroll' , ssr: false}
 	]
 	server: [
 		port: 3000,
