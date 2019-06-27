@@ -12,9 +12,10 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0",
-    "vue-scrollto": "^2.13.0",
-    "vue-visual": "^0.5.2",
-    "vue-in-viewport-directive": "^1.2.1"
+    "vue-in-viewport-directive": "^1.2.1",
+    "vue-scroll": "^2.1.12",
+    "vue-scrollto": "^2.15.0",
+    "vue-visual": "^0.5.2"
   },
   "devDependencies": {
     "blamo": "^1.0.2",
