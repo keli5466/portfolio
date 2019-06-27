@@ -9,7 +9,7 @@ marquee
 		a(href='https://github.com/keli5466' target="_blank") GitHub
 		a(href='https://www.instagram.com/whatdakell' target="_blank") Instagram
 		a(href='https://www.linkedin.com/in/kelly-linehan/' target="_blank") LinkedIn
-	.content
+	.content(:class='{scaledown: active , scaleup: !active }')
 		h1.headline Kelly <br> Linehan
 		h2.subhead Front-end Web Developer
 
@@ -18,6 +18,23 @@ marquee
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script lang='coffee'>
+export default
+	data: ->
+		active: false
+		scrollPos: 0
+
+	mounted: ->
+		window.addEventListener 'scroll', @watchScroll
+
+	methods:
+
+		watchScroll: ->
+			@scrollPos = window.pageYOffset || document.documentElement.scrollTop
+			if @scrollPos > 200
+				@active = true
+			else
+				@active = false
+
 </script>
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -55,10 +72,11 @@ pink-grad = #F64F59
 	&:hover
 		background-size 100% 88%
 	> *
-		font-family 'Noto Serif JP', sans-serif
+		// font-family 'Noto Serif JP', sans-serif
 		margin-right rem(40px)
-		font-weight 300
-		font-size(18px)
+		// font-weight 300
+		text-transform uppercase
+		// font-size(18px)
 		display inline-block
 		transform translateY(0)
 		opacity 0.8
@@ -74,9 +92,19 @@ pink-grad = #F64F59
 	top 50%
 	background white
 	left 50%
+	cursor default
 	text-transform uppercase
 	backface-visibility hidden
-	transform translate3d(-50%,-50%,0)
+	transform translate3d(-50%,-50%,0) scale(1);
+	z-index -1
+	opacity 1
+
+	transition transform .5s smooth-in-out, opacity 500ms ease
+	&.scaledown{
+		transform translate3d(-50%,-150%,0) scale(0.9);
+		opacity: 0;
+			transition transform .5s smooth-in-out, opacity 500ms ease
+	}
 	@media (max-width mobile)
 		left 60%
 		.headline

@@ -34,7 +34,6 @@ export default
 	methods:
 
 		watchScroll: ->
-
 			@scrollPos = window.pageYOffset || document.documentElement.scrollTop
 			if @scrollPos > 500
 				@active = true

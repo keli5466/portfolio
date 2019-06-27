@@ -52,12 +52,10 @@ item-height = 400px
 	position relative
 	padding 30px 20px
 
-	//- Every 6th Item starting at the first
-	&:nth-child(7n)
-	&:nth-child(5n+1)
+	&:nth-child(3n+1)
 		flex 1 1 (max-w/2)
 		min-width 50%
-		
+
 		.copy
 			max-width 80%
 
