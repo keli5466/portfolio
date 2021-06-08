@@ -4,7 +4,7 @@ Grid Item Component
 
 <template lang='pug'>
 
-a.box(v-in-viewport='-250' :href='project.href' target="_blank")
+a.box(:href='project.href' target="_blank")
 
 	visual.background(v-if='project.bg' fill :image='project.bg')
 	visual.video(v-if='project.video' loop mute fill

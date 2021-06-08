@@ -5,12 +5,12 @@ The layout header
 <template lang='pug'>
 
 .header
+
 	.max-w
 		visual.logo(image='./kl-logo.png' background=''
 			:class='{fullOpac: active}')
 		.primary-nav
-			a.nav-item(href='#intro'
-				:class='{active: !active}'
+			a.nav-item(href='#intro' :class='{active: !active}'
 				v-scroll-to="'#intro'") home
 			a.nav-item(href='#work'
 				:class='{active: active}'
@@ -27,13 +27,14 @@ export default
 	data: ->
 		active: false
 		scrollPos: 0
+		load: false
 
 	mounted: ->
 		window.addEventListener 'scroll', @watchScroll
 
 	methods:
-
 		watchScroll: ->
+			console.log 'his'
 			@scrollPos = window.pageYOffset || document.documentElement.scrollTop
 			if @scrollPos > 500
 				@active = true

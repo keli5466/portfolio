@@ -5,8 +5,7 @@ Homepage
 <template lang='pug'>
 
 .homepage
-	h1 my-project
-	h2 tester
+	h1 Kelly Linehan Portfolio
 
 </template>
 
