@@ -1,24 +1,25 @@
 {
-  "name": "my-project",
-  "version": "1.0.0",
-  "description": "tester",
-  "author": "Kelly L <kellylinehan2@gmail.com>",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "nuxt": "^1.0.0",
-    "vue-in-viewport-directive": "^1.2.1",
-    "vue-scroll": "^2.1.12",
-    "vue-scrollto": "^2.15.0",
-    "vue-visual": "^0.5.2"
-  },
-  "devDependencies": {
-    "blamo": "^1.0.2",
-    "dotenv": "^6.0.0"
-  }
+	"name": "Kelly-Linehans-Portfolio",
+	"version": "1.0.0",
+	"description": "tester",
+	"author": "Kelly L <kellylinehan2@gmail.com>",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate"
+	},
+	"dependencies": {
+		"nuxt": "^1.0.0",
+		"sass-loader": "^8.1.0",
+		"vue-in-viewport-directive": "^1.2.1",
+		"vue-scroll": "^2.1.12",
+		"vue-scrollto": "^2.15.0",
+		"vue-visual": "^0.5.2"
+	},
+	"devDependencies": {
+		"blamo": "^1.0.2",
+		"dotenv": "^6.0.0"
+	}
 }

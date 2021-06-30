@@ -2,6 +2,7 @@
 The layout header
 -->
 
+
 <template lang='pug'>
 
 .header
@@ -44,7 +45,34 @@ export default
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+
 <style lang='stylus' scoped>
+
+.content.scaleup,
+.logo
+		opacity 0
+		transform translateY(10px)
+		transition transform 500ms cubic-bezier(0, 0, 0.2, 1), opacity 1s ease
+		transition-delay 300ms
+
+
+for i in (1..20)
+	.nav-item:nth-child({i})
+		opacity 0
+		transform translateY(10px)
+		transition transform 500ms cubic-bezier(0, 0, 0.2, 1), opacity 1s ease
+		transition-delay 300ms + (i*120)
+
+.loaded
+	.logo
+	.nav-item
+		opacity 1
+		transform translateY(0px)
+
+	.social-links > *
+		opacity 0
+
+
 
 .header
 	width 100%

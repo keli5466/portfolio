@@ -1,5 +1,43 @@
 export default [
 	{
+		name: 'Apple'
+		info: 'Your Apple Teacher Journey'
+		bg: './work/hero_cover_image_large.jpeg'
+		tools: 'React / SCSS / JS'
+		href: 'https://appleteacher.apple.com/#/home/rp/T006360A-en_US'
+	},
+	{
+		name: 'Apple'
+		info: 'iPad and Mac Foundations'
+		bg: './work/ipad-mac.png'
+		tools: 'React / SCSS / JS'
+		href: 'https://appleteacher.apple.com/#/home/rp/T038121A-en_US'
+	},
+
+	
+	{
+		name: 'Apple'
+		info: 'Everyone Can Create Overview'
+		bg: './work/ecc_overview_banner_large_2x.jpeg'
+		tools: 'React / SCSS / JS'
+		href: 'https://appleteacher.apple.com/#/home/rp/T020408A-en_US'
+	},
+	{
+		name: 'Apple'
+		info: 'Earning Swift Playgrounds Badges'
+		bg: './work/earningSwiftPlaygroundsBadges-hero-2_large_2x.jpeg'
+		tools: 'React / SCSS / JS'
+		href: 'https://appleteacher.apple.com/#/home/rp/T007440A-en_US'
+	},
+	{
+		name: 'Apple'
+		info: 'Teaching Code Overview
+'
+		bg: './work/overview_header_module_banner_large_2x.jpeg'
+		tools: 'Handlebars / SassKit / SCSS / JS'
+		href: 'https://appleteacher.apple.com/#/home/rp/T021336A-en_US'
+	},
+	{
 		name: 'The North Face'
 		info: '2018 US Freeski Olympic International Collection'
 		bg: './work/international-collection.gif'

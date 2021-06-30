@@ -41,6 +41,27 @@ export default
 
 <style lang='stylus' scoped>
 
+
+.content
+		opacity 0
+		transition opacity 2s ease 1s
+
+
+for i in (1..20)
+	.social-links a:nth-child({i})
+		opacity 0
+		transform translateY(10px)
+		transition transform 500ms cubic-bezier(0, 0, 0.2, 1), opacity 1s ease
+		transition-delay 400ms + (i*120)
+
+.loaded
+	.social-links a
+		opacity 1
+		transform translateY(0px)
+	.content
+			opacity 1
+
+
 shadow-width = 5px
 primary-shadow = #7AD9F5
 secondary-shadow = #A7E7E7
@@ -97,14 +118,7 @@ pink-grad = #F64F59
 	backface-visibility hidden
 	transform translate3d(-50%,-50%,0) scale(1);
 	z-index -1
-	opacity 1
 
-	transition transform .5s smooth-in-out, opacity 500ms ease
-	&.scaledown{
-		transform translate3d(-50%,-150%,0) scale(0.9);
-		opacity: 0;
-			transition transform .5s smooth-in-out, opacity 500ms ease
-	}
 	@media (max-width mobile)
 		left 60%
 		.headline

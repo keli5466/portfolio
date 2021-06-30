@@ -42,6 +42,7 @@ export default
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <style lang='stylus' scoped>
+
 	.App 
 		position: relative;
 		opacity: 1;
