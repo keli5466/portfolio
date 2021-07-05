@@ -16,7 +16,7 @@ The layout header
 			a.nav-item(href='#work'
 				:class='{active: active}'
 				v-scroll-to="'#work'") work
-			a.nav-item(href='mailto:kellylinehan2@gmail.com?subject=Call Me Beep Me If You Want To Reach Me') contact
+			a.nav-item(href='mailto:kellylinehan2@gmail.com?subject=Greetings') contact
 
 
 </template>

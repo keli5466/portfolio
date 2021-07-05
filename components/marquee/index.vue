@@ -6,8 +6,8 @@ marquee
 
 .marquee.max-w
 	.social-links
-		a(href='https://github.com/keli5466' target="_blank") GitHub
-		a(href='https://www.instagram.com/whatdakell' target="_blank") Instagram
+		a(href='https://github.com/whatdakell' target="_blank") GitHub
+		a(href='https://codepen.io/WhatDaKell' target="_blank") CodePen
 		a(href='https://www.linkedin.com/in/kelly-linehan/' target="_blank") LinkedIn
 	.content(:class='{scaledown: active , scaleup: !active }')
 		h1.headline Kelly <br> Linehan
@@ -117,7 +117,6 @@ pink-grad = #F64F59
 	text-transform uppercase
 	backface-visibility hidden
 	transform translate3d(-50%,-50%,0) scale(1);
-	z-index -1
 
 	@media (max-width mobile)
 		left 60%
@@ -141,6 +140,13 @@ pink-grad = #F64F59
 	display inline-block
 	.content:hover &
 		background-size 100% 88%
+
+.content:hover
+	.subhead
+		background-size 100% 88%
+	.content
+		text-shadow (-(shadow-width)) (-(shadow-width)) 0 secondary-shadow
+
 
 @keyframes drawLine
 	0%
